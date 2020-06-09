@@ -7,12 +7,9 @@ console.log(name.toUpperCase())
 // Complete the following procedure, capitalizing all the words in the variable sentence and printing: 'Good Afternoon, Mr Mike.'
 var sentence = 'good afternoon, mr mike.';
 var arr = sentence.split(" ")
-var arr2 = []
 for(var i=0; i < arr.length; i++) {
-  arr2[i] = arr[i].replace(arr[i].charAt(0), arr[i].charAt(0).toUpperCase())
-}
-for(var j=0; j < arr2.length; j++) {
-  sentence = sentence.replace(arr[j], arr2[j])
+  var upperFirstWord = arr[i].replace(arr[i].charAt(0), arr[i].charAt(0).toUpperCase())
+  sentence = sentence.replace(arr[i], upperFirstWord)
 }
 console.log(sentence)
 //TODO write your code here...
